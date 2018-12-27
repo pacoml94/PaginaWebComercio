@@ -6,7 +6,7 @@
     header( 'Content-type: application/json' );
 
 
-    $to             = 'themehippo@gmail.com'; //put your email here
+    $to             = 'descargasycosas94@gmail.com'; //put your email here
     $email_template = 'simple.html';  // will find it on email-templates/ directory
 
     $subject    = "SUBJECT";
@@ -60,7 +60,7 @@
     if ( mail( $to, $subject, $contents, $headers ) ) {
         $result = array( 'response' => 'success', 'message'=>'<strong>Success!</strong> Mail Sent.' );
     } else {
-        $result = array( 'response' => 'error', 'message'=>'<strong>Error!</strong> Cann\'t Send Mail.'  );
+        $result = array( 'response' => 'error', 'message'=>'<strong>Error!</strong> Can\'t Send Mail.'  );
     }
 
     echo json_encode( $result );
